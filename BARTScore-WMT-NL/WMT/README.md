@@ -1,4 +1,4 @@
-
+## update: transformations with NL are embedded in the scoring codes. See score2.py. We use 'kk-en' for data.
 
 We have used **WMT-19** DARR dataset, and considered the follwing language pairs: `de-en`, `fi-en`, `gu-en`, `kk-en`, `lt-en`, `ru-en`, `zh-en`. For each language pair, we converted the original dataset into an unified form as shown below (all texts non-tokenized, normal cased). The unified data form is in each dataset folder, and is named as `data.pkl`. Note that there is another file `final_p.pkl`  in each dataset folder, which is our calculated score file.
 
@@ -63,4 +63,4 @@ To reproduce the results, run the following as an example.
 ```bash
 python score.py --file kk-en/data.pkl --device cuda:0 --output kk-en/scores.pkl --bleu --chrf --bleurt --prism --comet --bert_score --bart_score --bart_score_cnn --bart_score_para --prompt bart_para_ref
 ```
-## update: transformations with NL are embedded in the scoring codes. See score2.py
+
